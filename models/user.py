@@ -13,9 +13,8 @@ storage_type = getenv("HBNB_TYPE_STORAGE")
 
 
 class User(BaseModel, Base):
-    '''
-        Definition of the User class
-    '''
+    """Initialization of the user class:"""
+
     __tablename__ = 'users'
     if storage_type == 'db':
         email = Column(String(128), nullable=False)
