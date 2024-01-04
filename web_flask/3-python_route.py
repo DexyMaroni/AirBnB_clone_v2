@@ -20,7 +20,7 @@ def hbnb():
 @app.route("/c/<text>")
 def text(text):
     """ Replace underscores with spaces in the text variable """
-     return 'C' + text.replace('_', ' ')
+    return 'C' + text.replace('_', ' ')
 
 @app.route("/python/<text>")
 def python_text(text = "is cool"):

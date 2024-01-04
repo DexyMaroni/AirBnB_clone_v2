@@ -20,7 +20,7 @@ def hbnb():
 @app.route("/c/<text>")
 def text(text):
     """ Replace underscores with spaces in the text variable """
-     return 'C' + text.replace('_', ' ')
+    return 'C' + text.replace('_', ' ')
 
 if __name__ == '__main__':
     app.url_map.strict_slashes = False
